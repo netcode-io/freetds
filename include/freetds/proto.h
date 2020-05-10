@@ -507,6 +507,12 @@ enum {
 	TDS5_MSG_MIG_IGN = 20, /* Server sends to abort previous TDS_MSG_MIG_REQ . */
 	TDS5_MSG_MIG_FAIL = 21, /* Client sends to original server to indicate that the
 			migration attempt failed. Optional parameter indicates failure reason. */
+	TDS5_MSG_SEC_REMPWD2 = 22,
+	TDS5_MSG_MIG_RESUME = 23,
+	TDS5_MSG_SEC_ENCRYPT3 = 30,
+	TDS5_MSG_SEC_LOGPWD3 = 31,
+	TDS5_MSG_SEC_REMPWD3 = 32,
+	TDS5_MSG_DR_MAP = 33,
 };
 
 /* TDS 5 TDS5_MSG_SEC_OPAQUE types.
